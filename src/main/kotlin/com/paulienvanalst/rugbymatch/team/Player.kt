@@ -1,7 +1,10 @@
 package com.paulienvanalst.rugbymatch.team
 
+import java.util.*
 
-class Player(val position: Position, val backNumber: Int) {
-//todo to implement
 
+data class Player(val position: Position, val backNumber: Int) {
+
+    val isStarting: Boolean
+        get() = backNumber <= 15
 }
